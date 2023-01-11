@@ -1,0 +1,61 @@
+/* Color palette */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+html {
+    font-size: 62.5%; /* Used so that 1rem = 10px */
+}
+
+body {
+    font-size: 16px; /* Used so that 1rem = 10px */
+    background-color: var(--light-gray);
+    font-family: 'Outfit', sans-serif;   
+    box-sizing: border-box;  /* Used so that adding padding on child elements does not change the size of the container. */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /* Used so that adding padding on child elements does not change the size of the container. */
+} 
+
+.container {
+    background-color: var(--white);
+    max-width: 33rem;
+    margin: 15rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    padding: 1.5rem 1.5rem 4rem 1.5rem;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.container h1 {
+    margin: 2.5rem 0 1.5rem 0;
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--dark-blue);
+}
+
+.container p {
+    margin: 0;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--grayish-blue);
+}
